@@ -2,6 +2,7 @@
 //
 
 import Foundation
+import TableTop
 
 extension TableRowData {
     init(_ item: ItemData) {

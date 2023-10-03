@@ -8,6 +8,15 @@
         "branch" : "master",
         "revision" : "8942e732e50458cde5dccf9996afa16f29372853"
       }
+    },
+    {
+      "identity" : "tabletop",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/anconaesselmann/TableTop",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9ad5c9cfc9f5e8f391f01fd7511e2a92788916e2"
+      }
     }
   ],
   "version" : 2
