@@ -41,21 +41,22 @@ struct TableExperimentView: View {
                 }
             }
             .backport.onKeyPress(.leftArrow) {
-                guard let sectionId = vm.selectedSectionId else {
-                    return .handled
-                }
-                Task { @MainActor in
-                    vm.selection = nil
-                    sectionManager.collapse(sectionWithId: sectionId)
-                }
+                collapseSelectedSection()
                 return .handled
             }
             if vm.loading {
-                Color.gray
-                    .opacity(0.1)
-                    .ignoresSafeArea()
-                ProgressView()
+                LoadingView()
             }
+        }
+    }
+
+    private func collapseSelectedSection() {
+        guard let sectionId = vm.selectedSectionId else {
+            return
+        }
+        Task { @MainActor in
+            vm.selection = nil
+            sectionManager.collapse(sectionWithId: sectionId)
         }
     }
 }

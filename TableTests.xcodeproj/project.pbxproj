@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97A1D95D2ACC904500D52834 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A1D95C2ACC904500D52834 /* LoadingView.swift */; };
 		97A8423E2AC90D50007B97A3 /* TableTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8423D2AC90D50007B97A3 /* TableTestsApp.swift */; };
 		97A842402AC90D50007B97A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A8423F2AC90D50007B97A3 /* ContentView.swift */; };
 		97A842422AC90D52007B97A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A842412AC90D52007B97A3 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97A1D95C2ACC904500D52834 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		97A8423A2AC90D50007B97A3 /* TableTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A8423D2AC90D50007B97A3 /* TableTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTestsApp.swift; sourceTree = "<group>"; };
 		97A8423F2AC90D50007B97A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,9 +110,9 @@
 			children = (
 				97A8423D2AC90D50007B97A3 /* TableTestsApp.swift */,
 				97A8423F2AC90D50007B97A3 /* ContentView.swift */,
-				97B5ADB22ACC8C4700613DC5 /* Backport */,
 				97A842892ACBE5FB007B97A3 /* TableExperimentView */,
 				97A842512ACB37BF007B97A3 /* Models */,
+				97B5ADB22ACC8C4700613DC5 /* Backport */,
 				97A842852ACBDAD9007B97A3 /* TableColumn+Extensions.swift */,
 				97A842942ACC0300007B97A3 /* KeyPathComparator+Extensions.swift */,
 				97A842582ACB89E7007B97A3 /* Supporting */,
@@ -191,6 +193,7 @@
 				97A8428A2ACBE60E007B97A3 /* SectionManager.swift */,
 				97A8425D2ACB8AAB007B97A3 /* SectionHeaderView.swift */,
 				97A842702ACBBB6C007B97A3 /* TableRowData.swift */,
+				97A1D95C2ACC904500D52834 /* LoadingView.swift */,
 			);
 			path = TableExperimentView;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				97A8428D2ACBE933007B97A3 /* OptionalChildComparator.swift in Sources */,
 				97A842912ACBE952007B97A3 /* NoneOptionalChildComparator.swift in Sources */,
 				97A842952ACC0300007B97A3 /* KeyPathComparator+Extensions.swift in Sources */,
+				97A1D95D2ACC904500D52834 /* LoadingView.swift in Sources */,
 				97A8427B2ACBD9AE007B97A3 /* ComparatorComparable.swift in Sources */,
 				97A842552ACB37D5007B97A3 /* SectionData.swift in Sources */,
 				97A8428B2ACBE60E007B97A3 /* SectionManager.swift in Sources */,
