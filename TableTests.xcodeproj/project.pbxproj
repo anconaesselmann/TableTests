@@ -35,6 +35,9 @@
 		97A842952ACC0300007B97A3 /* KeyPathComparator+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A842942ACC0300007B97A3 /* KeyPathComparator+Extensions.swift */; };
 		97A842972ACC0347007B97A3 /* TableRowData+ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A842962ACC0347007B97A3 /* TableRowData+ItemData.swift */; };
 		97A8429A2ACC053A007B97A3 /* LoremSwiftum in Frameworks */ = {isa = PBXBuildFile; productRef = 97A842992ACC053A007B97A3 /* LoremSwiftum */; };
+		97B5ADB42ACC8C5300613DC5 /* Backport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B5ADB32ACC8C5300613DC5 /* Backport.swift */; };
+		97B5ADB62ACC8C6700613DC5 /* View+Backport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B5ADB52ACC8C6700613DC5 /* View+Backport.swift */; };
+		97B5ADBA2ACC8CB600613DC5 /* Backport+onKeyPress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B5ADB92ACC8CB600613DC5 /* Backport+onKeyPress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +70,9 @@
 		97A842922ACBE9AD007B97A3 /* NoneOptionalChildComparatorWithOptionalProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneOptionalChildComparatorWithOptionalProperty.swift; sourceTree = "<group>"; };
 		97A842942ACC0300007B97A3 /* KeyPathComparator+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyPathComparator+Extensions.swift"; sourceTree = "<group>"; };
 		97A842962ACC0347007B97A3 /* TableRowData+ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableRowData+ItemData.swift"; sourceTree = "<group>"; };
+		97B5ADB32ACC8C5300613DC5 /* Backport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backport.swift; sourceTree = "<group>"; };
+		97B5ADB52ACC8C6700613DC5 /* View+Backport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Backport.swift"; sourceTree = "<group>"; };
+		97B5ADB92ACC8CB600613DC5 /* Backport+onKeyPress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Backport+onKeyPress.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 			children = (
 				97A8423D2AC90D50007B97A3 /* TableTestsApp.swift */,
 				97A8423F2AC90D50007B97A3 /* ContentView.swift */,
+				97B5ADB22ACC8C4700613DC5 /* Backport */,
 				97A842892ACBE5FB007B97A3 /* TableExperimentView */,
 				97A842512ACB37BF007B97A3 /* Models */,
 				97A842852ACBDAD9007B97A3 /* TableColumn+Extensions.swift */,
@@ -188,6 +195,24 @@
 			path = TableExperimentView;
 			sourceTree = "<group>";
 		};
+		97B5ADB22ACC8C4700613DC5 /* Backport */ = {
+			isa = PBXGroup;
+			children = (
+				97B5ADB32ACC8C5300613DC5 /* Backport.swift */,
+				97B5ADB52ACC8C6700613DC5 /* View+Backport.swift */,
+				97B5ADB82ACC8CA500613DC5 /* Backports */,
+			);
+			path = Backport;
+			sourceTree = "<group>";
+		};
+		97B5ADB82ACC8CA500613DC5 /* Backports */ = {
+			isa = PBXGroup;
+			children = (
+				97B5ADB92ACC8CB600613DC5 /* Backport+onKeyPress.swift */,
+			);
+			path = Backports;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,7 +244,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					97A842392AC90D50007B97A3 = {
 						CreatedOnToolsVersion = 14.3;
@@ -265,10 +290,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A842772ACBD987007B97A3 /* OptionalComparator.swift in Sources */,
+				97B5ADB62ACC8C6700613DC5 /* View+Backport.swift in Sources */,
 				97A842932ACBE9AD007B97A3 /* NoneOptionalChildComparatorWithOptionalProperty.swift in Sources */,
 				97A8427F2ACBD9D6007B97A3 /* ComparisonResult+Extensions.swift in Sources */,
 				97A8427D2ACBD9BB007B97A3 /* RowStringConvertable.swift in Sources */,
 				97A8424E2ACB3785007B97A3 /* Primitives+RowStringConvertable.swift in Sources */,
+				97B5ADB42ACC8C5300613DC5 /* Backport.swift in Sources */,
 				97A842882ACBE5AE007B97A3 /* TableExperimentView.swift in Sources */,
 				97A842832ACBDA52007B97A3 /* Primitives+ComparatorComparable.swift in Sources */,
 				97A842402AC90D50007B97A3 /* ContentView.swift in Sources */,
@@ -282,6 +309,7 @@
 				97A8425E2ACB8AAB007B97A3 /* SectionHeaderView.swift in Sources */,
 				97A842862ACBDAD9007B97A3 /* TableColumn+Extensions.swift in Sources */,
 				97A842972ACC0347007B97A3 /* TableRowData+ItemData.swift in Sources */,
+				97B5ADBA2ACC8CB600613DC5 /* Backport+onKeyPress.swift in Sources */,
 				97A842572ACB889E007B97A3 /* TableExperimentViewModel.swift in Sources */,
 				97A8428D2ACBE933007B97A3 /* OptionalChildComparator.swift in Sources */,
 				97A842912ACBE952007B97A3 /* NoneOptionalChildComparator.swift in Sources */,
@@ -328,9 +356,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -386,9 +416,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -412,6 +444,7 @@
 				CODE_SIGN_ENTITLEMENTS = TableTests/TableTests.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TableTests/Preview Content\"";
 				DEVELOPMENT_TEAM = D7MN23CD5F;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -450,6 +483,7 @@
 				CODE_SIGN_ENTITLEMENTS = TableTests/TableTests.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"TableTests/Preview Content\"";
 				DEVELOPMENT_TEAM = D7MN23CD5F;
 				ENABLE_HARDENED_RUNTIME = YES;

@@ -3,6 +3,7 @@
 
 import SwiftUI
 
+@MainActor
 class TableExperimentViewModel: ObservableObject {
 
     @MainActor
@@ -29,11 +30,27 @@ class TableExperimentViewModel: ObservableObject {
         }
     }
 
+    @MainActor
     var selection: TableRowData.ID?
 
+    @MainActor
+    var selectedSectionId: SectionData.ID? {
+        guard let selected = selection else {
+            return nil
+        }
+        guard let section = sections.first(where: { section in
+            section.items.contains(where: { $0.id == selected })
+        }) else
+        {
+            return nil
+        }
+        return section.id
+    }
+
     init() {
-        sections = (0..<30).map { _ in
-            SectionData(items: (0..<1000).map { _ in ItemData.randomItem() })
+        sections = (0..<10).map { _ in
+            SectionData(items: (0..<100).map { _ in ItemData.randomItem() })
         }
     }
+
 }

@@ -15,4 +15,11 @@ class SectionManager: ObservableObject {
         expanded.toggle(sectionId)
         self.objectWillChange.send()
     }
+
+    func collapse(sectionWithId sectionId: SectionData.ID) {
+        if expanded.contains(sectionId) {
+            expanded.remove(sectionId)
+            self.objectWillChange.send()
+        }
+    }
 }
