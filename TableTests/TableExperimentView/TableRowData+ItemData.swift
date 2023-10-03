@@ -10,6 +10,7 @@ extension TableRowData {
             a: item.a,
             b: item.b,
             c: item.c,
+            number: item.number,
             childA: item.child?.a,
             childB: item.child?.b,
             childC: item.child?.c,
@@ -25,6 +26,7 @@ extension Array where Element == KeyPathComparator<TableRowData> {
             case \.a: return .init(value: \.a, order: $0.order)
             case \.b: return .init(value: \.b, order: $0.order)
             case \.c: return .init(value: \.c, order: $0.order)
+            case \.number: return .init(value: \.number, order: $0.order)
             case \.childA: return .init(child: \.child, value: \.a, order: $0.order)
             case \.childB: return .init(child: \.child, value: \.b, order: $0.order)
             case \.childC: return .init(child: \.child, value: \.c, order: $0.order)

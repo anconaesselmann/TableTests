@@ -44,3 +44,15 @@ extension Date: ComparatorComparable {
         }
     }
 }
+
+extension Double: ComparatorComparable {
+    func compare(_ value: Self) -> ComparisonResult {
+        if self == value {
+            return .orderedSame
+        } else if self < value {
+            return .orderedAscending
+        } else {
+            return .orderedDescending
+        }
+    }
+}

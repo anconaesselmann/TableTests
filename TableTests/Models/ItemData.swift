@@ -22,6 +22,7 @@ struct ItemData: Identifiable {
     let a: String
     var b: String? = nil
     var c: Bool = false
+    var number: Double? = nil
     var child: ChildData?
 }
 
@@ -43,6 +44,7 @@ extension ItemData {
             a: Lorem.firstName,
             b: Int.random(in: 0..<3) % 3 == 0 ? Lorem.lastName : nil,
             c: Bool.random(),
+            number: Bool.random() ? Double.random(in: 0..<100) : nil,
             child: Bool.random() ? ChildData(
                 a: Int.random(in: 0..<10000),
                 b: .init(rawValue: ["a", "b", "c"].shuffled().first!)!,

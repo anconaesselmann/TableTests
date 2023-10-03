@@ -21,6 +21,7 @@ struct TableExperimentView: View {
                     TableColumn("a", value: \.a)
                     TableColumn("b", value: \.b)
                     TableColumn("c", value: \.c)
+                    TableColumn("number", value: \.number, formatter: DefaultFormatters.currency)
                     TableColumn("child_a", value: \.childA)
                     TableColumn("child_b", value: \.childB)
                     TableColumn("child_c", value: \.childC)

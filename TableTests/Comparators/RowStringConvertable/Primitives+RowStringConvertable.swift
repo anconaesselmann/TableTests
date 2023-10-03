@@ -20,11 +20,3 @@ extension Bool: RowStringConvertable {
         String(self ? "true" : "false")
     }
 }
-
-extension Date: RowStringConvertable {
-    var rowStringValue: String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        return formatter.string(from: self)
-    }
-}

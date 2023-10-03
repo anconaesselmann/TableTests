@@ -8,6 +8,7 @@ struct TableRowData: Identifiable {
     let a: String
     var b: String?
     var c: Bool
+    var number: Double?
     var childA: Int?
     var childB: ChildData.Options?
     var childC: String?
